@@ -1,0 +1,70 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  .header {
+    height: 48px;
+    width: 100%;
+    overflow: hidden;
+    background: #020C2B;
+    text-align: center;
+    // div {
+    //   float: left;
+    // }
+    // .div1 {
+    //   width: 180px;
+    //   span {
+    //     display: inline-block;
+    //     height: 48px;
+    //     vertical-align: middle;
+    //   }
+    // }
+    .title {
+      vertical-align: middle;
+      color: #ffffff;
+      font-size: 16px;
+      padding-top: 10px;
+    }
+    .user {
+      color: #ffffff;
+      font-size: 12px;
+      font-family: "PingFang SC", "Helvetica Neue For Number", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+      font-weight: 100;
+      padding:11px 20px 0px 20px;
+      height: 48px;
+      .logout{
+        li {
+          background: red!important;
+        }
+      }
+    }
+    .user:hover {
+      background: #182241;
+    }
+    .img {
+      width: 50px;
+      height: 32px;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+    .userMenu{
+      li {
+        color: #fff!important;
+      } 
+    }
+  }
+
+  .navbox {
+    height:calc(100% - 48px);
+  }
+  .contents {
+    padding: 8px 16px 8px 16px;
+  }
+}
+.userMenu{
+  li {
+    background-color: #fff !important;
+  } 
+  .ant-menu-item-selected {
+    color: #FF7700 !important;
+  }
+}

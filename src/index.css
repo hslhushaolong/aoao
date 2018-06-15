@@ -1,0 +1,527 @@
+html, body, #root {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+:global #root a:focus {
+	text-decoration: none;
+}
+
+:global #root a:hover button {
+	color: #FF7700;
+}
+
+:global body {
+	font-family: "PingFang SC",
+	"Helvetica Neue For Number",
+	"-apple-system", "BlinkMacSystemFont",
+	"Segoe UI", "Roboto",
+	"Hiragino Sans GB",
+	"Microsoft YaHei",
+	"Helvetica Neue",
+	"Helvetica",
+	"Arial",
+	"sans-serif" !important;
+}
+
+:global #root {
+	width: 100%;
+	height: 100%;
+}
+
+:global #root img {
+	border: none;
+	border-radius: 4px;
+}
+
+:global #root .pointer {
+	cursor: pointer;
+}
+
+:global #message {
+	position: absolute;
+	margin: auto;
+	width: 520px;
+	min-height: 90px;
+	top: 150px;
+	left: 150px;
+	right: 0;
+	z-index: -999;
+}
+
+:global #root .systemColor {
+	color: #FF7700;
+	background: #FF7700;
+}
+
+:global #root .systemTextColor {
+	color: #FF7700;
+}
+
+/*---------------------------------------------*/
+/*文本修饰属性*/
+:global #root .textCenter {
+	text-align: center;
+}
+
+:global #root .textRight {
+	text-align: right;
+}
+
+:global #root .textLeft {
+	text-align: left;
+}
+
+/*---------------------------------------------*/
+/*布局样式*/
+:global #root .fltr {
+	float: right;
+}
+
+:global #root .fltl {
+	float: right;
+}
+
+/*---------------------------------------------*/
+/*全局 margin 属性*/
+:global #root .mgb8 {
+	margin-bottom: 8px;
+}
+
+:global #root .mgt8 {
+	margin-top: 8px;
+}
+
+:global #root .mgl8 {
+	margin-left: 8px;
+}
+
+:global #root .mgr8 {
+	margin-right: 8px;
+}
+
+:global #root .mg8 {
+	margin: 8px;
+}
+
+:global #root .mg16 {
+	margin: 16px;
+}
+
+:global #root .mgl16 {
+	margin-left: 16px;
+}
+
+:global #root .mgr16 {
+	margin-right: 16px;
+}
+
+:global #root .mgt16 {
+	margin-top: 16px;
+}
+
+:global #root .mgb16 {
+	margin-bottom: 16px;
+}
+
+:global #root .mgl32 {
+	margin-left: 32px;
+}
+
+:global #root .mg20 {
+	margin: 20px;
+}
+
+/*---------------------------------------------*/
+/*全局 font-weight 属性*/
+:global #root .ftw1 {
+	font-weight: 100;
+}
+
+:global #root .ftw2 {
+	font-weight: 200;
+}
+
+:global #root .ftw3 {
+	font-weight: 300;
+}
+
+:global #root .ftw4 {
+	font-weight: 400;
+}
+
+:global #root .ftw6 {
+	font-weight: 600;
+}
+
+/*登录背景图*/
+:global .login {
+	background-image: url("./static/bj.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*全局相关的主题及色系*/
+:global .ant-btn-primary {
+	background: #FF7700 !important;
+	border-color: #FF7700 !important;
+}
+
+:global .ant-btn-dashed:hover,
+:global .ant-btn-dashed:focus {
+  color: #FF7700 !important;
+  background-color: #fff !important;
+  border-color: #FF7700 !important;
+}
+
+
+:global .ant-modal-footer .ant-btn:hover,
+:global .ant-modal-footer .ant-btn:focus,
+:global .ant-modal-footer .ant-btn:active {
+	color: #FF7700 !important;
+}
+
+:global .ant-modal .ant-modal-footer .ant-btn-primary:hover,
+:global .ant-modal .ant-modal-footer .ant-btn-primary:focus,
+:global .ant-modal .ant-modal-footer .ant-btn-primary:active {
+	color: #FFFFFF !important;
+}
+
+:global .ant-input:focus {
+	border-color: #FF7700 !important;
+	outline: 0 !important;
+	box-shadow: 0 0 0 2px rgba(255, 119, 0, 0.2) !important;
+}
+
+:global .ant-input:hover, :global .ant-btn:hover, :global .ant-btn:focus {
+	border-color: #FF7700 !important;
+}
+
+:global .ant-upload .ant-btn:hover, :global .ant-upload .ant-btn:active, :global .ant-upload .ant-btn:focus {
+	color: #FF7700;
+}
+
+/*---------------------------------------------*/
+/*登录按钮*/
+:global .loginBtn {
+	height: 40px;
+}
+
+/*---------------------------------------------*/
+/*菜单栏重置*/
+:global .ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+	background: rgba(255, 119, 0, 0.4) !important;
+	border-left: 5px solid #FF7700;
+}
+
+:global .ant-menu-item {
+	font-family: "PingFang SC", "Helvetica Neue For Number", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+	background: #070C1F;
+}
+
+:global .ant-menu .ant-menu-item-selected {
+	color: #ffffff !important;
+}
+
+:global .ant-menu-item-active {
+	background: #020C2B !important;
+	color: #FF7700 !important;
+}
+
+:global #root .ant-menu-submenu-inline,
+:global #root .ant-menu-submenu-inline:hover {
+	background: #020C2B;
+}
+
+:global #root .ant-menu-submenu-inline .menu-two-subMenu li {
+	padding-left: 65px !important;
+}
+
+:global .ant-menu-submenu-selected .ant-menu-submenu-title {
+	font-weight: 400 !important;
+}
+
+/*导航左侧padding 16px*/
+:global .ant-menu-submenu-title {
+	padding-left: 16px !important;
+}
+
+:global .ant-dropdown-menu-item-active {
+	background: #F3F3F3 !important;
+}
+
+:global .navbox {
+	height: calc(100% - 48px) !important;
+	overflow: scroll;
+	background: #020C2B !important;
+	width: 180px;
+	display: inline-block;
+}
+
+/*---------------------------------------------*/
+/*layout内容样式*/
+:global .content {
+	height: calc(100% - 48px) !important;
+	width: calc(100% - 180px) !important;
+	position: absolute;
+	right: 0;
+	top: 48px;
+	overflow: scroll;
+}
+
+/*---------------------------------------------*/
+/*提示框样式*/
+:global body .ant-tooltip-inner {
+	background: #ffffff;
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
+	color: #000000;
+}
+
+:global body .ant-tooltip-placement-top .ant-tooltip-arrow {
+	border-top-color: #ffffff;
+}
+
+/*---------------------------------------------*/
+/*下拉框样式*/
+:global .ant-select-dropdown-menu-item:hover, :global .ant-select-dropdown-menu-item-active, :global .ant-select-dropdown-menu-item-selected {
+	background: rgba(255, 119, 0, 0.05) !important;
+}
+
+:global #root .ant-select-dropdown-menu-item-selected:hover:after {
+	color: #FF7700 !important;
+}
+
+:global #root .ant-select-dropdown-menu-item-selected:after {
+	color: #FF7700 !important;
+	background: #FF7700 !important;
+}
+
+:global #root .ant-select-dropdown .ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:after, :global #root .ant-select-dropdown .ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover:after {
+	color: #FF7700 !important;
+}
+
+:global #root .ant-select-selection:hover,
+:global #root .ant-select-selection:active,
+:global #root .ant-select-selection:focus {
+	border-color: #FF7700;
+}
+
+:global #root .ant-select-open .ant-select-selection {
+	border-color: #FF7700;
+	box-shadow: 0 0 0 2px rgba(255, 119, 0, 0.2);
+}
+
+/*---------------------------------------------*/
+/*分页样式*/
+:global #root .ant-pagination-item-active {
+	background-color: #FF7700;
+	border-color: #FF7700;
+}
+
+:global #root .ant-pagination-item-active a {
+	color: #ffffff !important;
+}
+
+:global #root .ant-pagination-item:hover,
+:global #root .ant-pagination-item:hover a {
+	transition: all 0.3s ease;
+	border-color: #FF7700;
+	color: #FF7700;
+}
+
+:global #root .ant-pagination-prev:hover,
+:global #root .ant-pagination-next:hover,
+:global #root .ant-pagination-prev:hover a,
+:global #root .ant-pagination-next:hover a {
+	transition: all 0.3s ease;
+	border-color: #FF7700;
+	color: #FF7700;
+}
+
+/*---------------------------------------------*/
+/*进度条样式*/
+/*:global #root .ant-progress-bg {*/
+/*background-color: #2dcf90;*/
+/*}*/
+/*---------------------------------------------*/
+
+/*文本输入框的样式*/
+textarea::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, .25);
+}
+
+textarea:-moz-placeholder {
+	color: rgba(0, 0, 0, .25);
+}
+
+textarea {
+	color: rgba(0, 0, 0, .65);
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	text-indent: 5px;
+}
+
+textarea:focus {
+	border: 1px solid #FF7700 !important;
+}
+
+/*error错误样式*/
+@-webkit-keyframes error-swing {
+	0% {
+		-webkit-transform: rotate(1deg)
+	}
+	100% {
+		-webkit-transform: rotate(-2deg)
+	}
+}
+
+:global
+
+@-moz-keyframes error-swing {
+	0% {
+		-moz-transform: rotate(1deg)
+	}
+	100% {
+		-moz-transform: rotate(-2deg)
+	}
+}
+
+:global
+
+@keyframes error-swing {
+	0% {
+		transform: rotate(1deg)
+	}
+	100% {
+		transform: rotate(-2deg)
+	}
+}
+
+:global .errorPin {
+	width: 38px;
+	height: 38px;
+	display: block;
+	margin: auto;
+	margin-bottom: -27px;
+	z-index: 10;
+	position: relative;
+	background: url("./static/errorBtn.png") no-repeat center center;
+}
+
+:global .errorCode {
+	width: 330px;
+	height: 300px;
+	padding: 127px 16px 0 16px;
+	position: relative;
+	margin-bottom: 30px;
+	z-index: 5;
+	line-height: 1;
+	font-size: 32px;
+	text-align: center;
+	background: url("./static/errorBg.png") no-repeat top center;
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-animation: error-swing infinite 2s ease-in-out alternate;
+	-moz-animation: error-swing infinite 2s ease-in-out alternate;
+	animation: error-swing infinite 2s ease-in-out alternate;
+}
+
+:global .errorCode span {
+	font-size: 65px;
+	display: block
+}
+
+:global .errorWrapper {
+	width: 330px;
+	padding: 30px 0;
+	margin: 80px auto;
+	position: relative;
+	text-align: center;
+}
+
+:global .ant-spin-dot i {
+	background: #FF7700 !important;
+	color: #FF7700 !important;
+}
+
+:global .ant-spin-nested-loading > div > .ant-spin {
+	max-height: 400px !important;
+}
+
+:global .checkDetail p {
+	color: #FF7700;
+}
+
+:global .checkDetail .ant-modal-header {
+	border-bottom: none;
+}
+
+:global .checkDetail .ant-modal-footer {
+	border-top: none;
+	text-align: center;
+}
+
+/*详情页面*/
+:global .detail {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding-bottom: 20px;
+}
+
+:global .detail .top {
+	padding: 16px;
+	background: #e3e3e3;
+}
+
+:global .detail .border {
+	border-top: 1px solid #e3e3e3;
+}
+
+
+:global .formulaImage {
+  background-image: url("./static/formula.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+:global .maxHeight .ant-select-selection__rendered {
+	max-height: 90px !important;
+	overflow: auto !important;
+}
+
+/*防止三行选项卡在一起会有空行*/
+:global .ant-form-item-label{
+	line-height: 33px !important;
+}
+
+/*AllSelect组件高度问题*/
+:global .maxHeight .ant-select-selection__rendered {
+	min-height: 30px !important;
+}
+
+:global .addUserTips{
+	display: block;
+	margin-top: -16px;
+	font-size: 10px;
+	color: #f53e3e;
+}
+
+:global .historyInfoFolder{
+	cursor: pointer;
+	font: 14px;
+	color: #f53e3e;
+}
+:global .overEllipsis{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	width: 260px;
+}
+:global .ant_menu_item_selected .ant-menu-item-selected {
+	color: #FF7700 !important;
+}

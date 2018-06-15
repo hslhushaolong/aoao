@@ -1,0 +1,105 @@
+/*@import "~antd/dist/antd.less";   // 引入官方提供的 less 样式入口文件
+@import "theme.less";   // 用于覆盖上面定义的变量*/
+#login {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .centerBox {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 28%;
+    height: 310px;
+    z-idnex: 999;
+
+    .logoBox {
+      height: 84px;
+      width: 100%;
+      .logo {
+        margin: 0 auto;
+				width: 65px;
+				height: 84px;
+        display: block;
+      }
+    }
+		:global .ant-form-item {
+			margin-bottom: 10px!important;
+		}
+
+    #title {
+      font-size: 20px;
+      font-family: "PingFang SC" !important;
+      color: rgba(90, 89, 89, 0.9);
+      font-weight: 400;
+      text-align: center;
+      margin:5px 0px 20px 0px;
+      p {
+        width: 41%;
+        display: inline-block;
+        padding: 0 6px;
+      }
+
+      .line {
+        border-top: 1px solid rgba(115, 113, 113, 0.4);
+        height: 6px;
+        width: 28%;
+        display: inline-block;
+      }
+    }
+    .input {
+      width: 81%;
+      position: relative;
+      font-weight: 100 !important;
+      left: 50%;
+      margin-left: -40.5%;
+      .margin {
+        width: 10px;
+        display: inline-block;
+      }
+      .barCode {
+        font-weight: 100;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 12px;
+        color: rgba(91, 91, 91, 0.8);
+        text-align: center;
+        width: 100%;
+      }
+      .barCode:hover, .barCode:focus {
+        color: #FF7700;
+      }
+      input {
+        height: 40px;
+      }
+      button {
+        height: 40px;
+      }
+    }
+    input::-webkit-input-placeholder {
+      color: rgba(91, 91, 91, 0.8);
+      font-weight: 100;
+    }
+    input:-moz-placeholder {
+      color: rgba(91, 91, 91, 0.8);
+      font-weight: 100;
+    }
+    input::-moz-placeholder {
+      color: rgba(91, 91, 91, 0.8);
+      font-weight: 100;
+    }
+    input:-ms-input-placeholder {
+      color: rgba(91, 91, 91, 0.8);
+      font-weight: 100;
+    }
+  }
+
+  .lgbg {
+    width: 103%;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,253 @@
+/**
+ * 项目整体目录结构及对应的文件夹描述
+ */
+.
+├── CHANGELOG.md	// 版本更新记录（版本号、发布人、发布的功能以及未发布的功能）
+├── README.md  	    // 项目READEME描述
+├── config.js  	    // 项目配置信息（测试及生产的接口地址、AccessKey、SecretKey、accessToken、过期token刷新地址、token有效时间）
+├── dist			// 打包后部署服务器的静态资源
+│   ├── 0.async.js
+│   ├── 1.async.js
+│   ├── 10.async.js
+│   ├── 11.async.js
+│   ├── 12.async.js
+│   ├── 13.async.js
+│   ├── 14.async.js
+│   ├── 15.async.js
+│   ├── 16.async.js
+│   ├── 17.async.js
+│   ├── 18.async.js
+│   ├── 19.async.js
+│   ├── 2.async.js
+│   ├── 20.async.js
+│   ├── 21.async.js
+│   ├── 22.async.js
+│   ├── 23.async.js
+│   ├── 24.async.js
+│   ├── 25.async.js
+│   ├── 26.async.js
+│   ├── 27.async.js
+│   ├── 28.async.js
+│   ├── 29.async.js
+│   ├── 3.async.js
+│   ├── 30.async.js
+│   ├── 4.async.js
+│   ├── 5.async.js
+│   ├── 6.async.js
+│   ├── 7.async.js
+│   ├── 8.async.js
+│   ├── 9.async.js
+│   ├── index.2.0.0.css
+│   ├── index.2.0.0.js
+│   ├── index.html
+│   └── static
+│       ├── bj.01e3b213.jpg
+│       ├── errorBg.a4d4c58c.png
+│       ├── favicon.ico
+│       ├── favicon@2x.ico
+│       ├── loginBg.c7868a6d.jpg
+│       └── logo.975f82db.png
+├── doc						// 项目文档
+│   ├── technologyStack.md	// 项目技术栈
+│   └── tree.txt			// 项目目录结构
+├── gulpfile.js				// 打包工具
+├── karma.conf.js			// 测试工具配置
+├── mochawesome-report		// 测试报告
+│   ├── assets
+│   │   ├── MaterialIcons-Regular.woff
+│   │   ├── MaterialIcons-Regular.woff2
+│   │   ├── app.css
+│   │   ├── app.js
+│   │   ├── roboto-light-webfont.woff
+│   │   ├── roboto-light-webfont.woff2
+│   │   ├── roboto-medium-webfont.woff
+│   │   ├── roboto-medium-webfont.woff2
+│   │   ├── roboto-regular-webfont.woff
+│   │   └── roboto-regular-webfont.woff2
+│   ├── mochawesome.html				// 测试报告结构
+│   └── mochawesome.json				// 测试报告json数据
+├── package-lock.json					// 项目依赖包版本锁
+├── package.json						// 项目依赖模块及项目配置信息
+├── src								// 开发源代码目录
+│   ├── components					// 公共组件库（后续可以继续完善以及添加）
+│   │   ├── breadCrumb.jsx   		// 面包屑组件
+│   │   ├── cancel.js				// 返回组件
+│   │   ├── certificateTemplate.js	// 证件信息模板（注意里面的数据结构 涉及到图片显示的）
+│   │   ├── components.less			// 组件库样式文件
+│   │   ├── imageTemplate.jsx		// 图片显示组件模板
+│   │   ├── informationTemplate.js  // 详情信息组件
+│   │   ├── message.jsx				// 消息通知组件（未使用，因产品决定不使用警示框来通知）
+│   │   ├── modal.jsx				// modal对话框组件
+│   │   ├── page.jsx				// 分页组件
+│   │   ├── search.jsx				// 搜索组件（考虑封装完后使用时并未节省开发时间，未使用）
+│   │   └── table.jsx				// 表格组件
+│   ├── index.css                   // 静态文件样式文件
+│   ├── index.html                  // 项目主页面结构
+│   ├── index.js                    // 项目主js文件
+│   ├── models                      // 项目业务处理代码文件
+│   │   ├── business.js             // 查询model层文件
+│   │   ├── employee.js             // 员工管理模块业务处理
+│   │   ├── finance.js              // 财务管理模块业务处理
+│   │   ├── login.js                // 登录模块业务处理
+│   │   ├── salary.js               // 薪资模块业务处理
+│   │   ├── stores.js               // 物资管理模块业务处理
+│   │   ├── system.js               // 系统管理模块业务处理
+│   │   └── upload.js               // 文件上传业务处理
+│   ├── router.js                   // 项目router组件
+│   ├── routes                      // 项目各模块组件
+│   │   ├── account                 // 用户管理模块
+│   │   │   ├── account.less        // less样式文件
+│   │   │   ├── index.jsx           // 主容器组件
+│   │   │   ├── personalLeave       // 个人离职组件
+│   │   │   │   └── index.js
+│   │   │   └── static              // 静态资源
+│   │   │       └── account.png
+│   │   ├── employee                // 员工管理模块
+│   │   │   ├── add                 // 添加员工
+│   │   │   │   └── index.js
+│   │   │   ├── leaveApproval       // 离职审批
+│   │   │   │   ├── index.js
+│   │   │   │   └── leaveDetail.js  // 离职详情
+│   │   │   └── search              // 员工查询
+│   │   │       ├── detail.jsx
+│   │   │       ├── edit.jsx
+│   │   │       ├── index.jsx
+│   │   │       ├── knightLeaveCheck.jsx
+│   │   │       ├── search.jsx
+│   │   │       └── search.less
+│   │   ├── error                   // 404错误页面
+│   │   │   ├── error.less
+│   │   │   ├── index.jsx
+│   │   │   └── static
+│   │   │       ├── errorBg.png
+│   │   │       └── errorBtn.png
+│   │   ├── finance                 // 财务管理模块
+│   │   │   ├── financeApply
+│   │   │   │   ├── detail.jsx
+│   │   │   │   ├── index.jsx
+│   │   │   │   ├── moreInfo.jsx
+│   │   │   │   ├── newRentDetail.jsx
+│   │   │   │   └── relet.jsx
+│   │   │   └── newFinanceApply
+│   │   │       └── index.jsx
+│   │   ├── layout                  // 项目layout
+│   │   │   ├── header.jsx
+│   │   │   ├── index.jsx
+│   │   │   ├── layout.less
+│   │   │   ├── nav.jsx
+│   │   │   └── static
+│   │   │       ├── headerLogo.png
+│   │   │       ├── logo.png
+│   │   │       ├── navLogo@2x.png
+│   │   │       └── userIcon.png
+│   │   ├── login                   // 登录模块
+│   │   │   ├── index.jsx
+│   │   │   ├── static
+│   │   │   │   ├── lgBg.jpg
+│   │   │   │   ├── loginBg.jpg
+│   │   │   │   ├── logo.png
+│   │   │   │   └── logoNew.png
+│   │   │   └── style
+│   │   │       ├── login.less
+│   │   │       └── theme.less
+│   │   ├── materials               // 物资管理模块
+│   │   │   ├── Purchase            // 物资申请
+│   │   │   │   ├── detail.jsx
+│   │   │   │   ├── errorOrder.jsx
+│   │   │   │   ├── pickRecord.jsx
+│   │   │   │   ├── purchase.less
+│   │   │   │   └── purchaseOrder.jsx
+│   │   │   ├── distribute          // 物资分发
+│   │   │   │   ├── detail.jsx
+│   │   │   │   ├── distributeLog.jsx
+│   │   │   │   └── distributeOrder.jsx
+│   │   │   └── inventory           // 物资库存
+│   │   │       ├── changeMessage.jsx
+│   │   │       ├── itemList.jsx
+│   │   │       ├── itemModal.jsx
+│   │   │       ├── knightMaterials.jsx
+│   │   │       ├── materialsDetail.jsx
+│   │   │       └── stores.jsx
+│   │   ├── operationManage         // 操作管理模块
+│   │   │   ├── checkDetail.jsx
+│   │   │   ├── index.jsx
+│   │   │   ├── upload.jsx
+│   │   │   └── upload.less
+│   │   ├── queryManage             // 查询管理
+│   │   │   ├── balance.jsx
+│   │   │   ├── balanceDetail.jsx
+│   │   │   ├── business.jsx
+│   │   │   ├── business.less
+│   │   │   ├── columns.js
+│   │   │   ├── detail.jsx
+│   │   │   ├── search.jsx
+│   │   │   └── tabs.jsx
+│   │   ├── role                    // 角色权限
+│   │   │   ├── role.js
+│   │   │   └── super.js
+│   │   ├── router.js               // 路由配置
+│   │   ├── salary                  // 薪资管理模块
+│   │   │   ├── deductions
+│   │   │   │   ├── create.jsx
+│   │   │   │   ├── detail.jsx
+│   │   │   │   └── index.jsx
+│   │   │   ├── fillingMoney
+│   │   │   │   ├── create.jsx
+│   │   │   │   ├── detail.jsx
+│   │   │   │   └── index.jsx
+│   │   │   ├── search
+│   │   │   │   ├── detail.jsx
+│   │   │   │   └── index.jsx
+│   │   │   └── setting
+│   │   │       ├── create.jsx
+│   │   │       ├── detail.jsx
+│   │   │       └── index.jsx
+│   │   └── system                  // 系统管理
+│   │       ├── field
+│   │       │   └── index.jsx
+│   │       ├── supplier
+│   │       │   ├── add.jsx
+│   │       │   ├── edit.jsx
+│   │       │   └── index.js
+│   │       ├── system.less
+│   │       ├── target
+│   │       │   └── index.jsx
+│   │       └── user
+│   │           ├── edit.jsx
+│   │           ├── index.jsx
+│   │           ├── modal.jsx
+│   │           └── search.jsx
+│   ├── services                    // 项目借口调用
+│   │   ├── account.js
+│   │   ├── business.js
+│   │   ├── employee.js
+│   │   ├── login.js
+│   │   ├── salary.js
+│   │   ├── stores.js
+│   │   ├── system.js
+│   │   └── upload.js
+│   ├── static                      // 项目静态资源
+│   │   ├── account.png
+│   │   ├── bj.jpg
+│   │   ├── errorBg.png
+│   │   ├── errorBtn.png
+│   │   ├── favicon.ico
+│   │   ├── favicon@2x.ico
+│   │   ├── headerLogo.png
+│   │   ├── lgBg.jpg
+│   │   ├── logoNew.png
+│   │   └── userIcon.png
+│   └── utils                       // 项目工具函数
+│       ├── createHead.js
+│       ├── delay.js
+│       ├── permission.js
+│       ├── request.js
+│       └── util.js
+└── test                            // 测试单元
+    ├── enumerationConversion.test.js
+    ├── information.test.js
+    ├── navLight.js
+    ├── readlocal.test.js
+    └── test.test.js
+
+47 directories, 204 files

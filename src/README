@@ -1,0 +1,213 @@
+.
+├── README
+
+├── components                        //公用模块
+│   ├── breadCrumb.jsx                //面包屑
+│   ├── cancel.js                     //返回组件
+│   ├── certificateTemplate.js        //证件详情信息模板
+│   ├── components.less               //样式
+│   ├── imageTemplate.jsx             //图片渲染模板
+│   ├── informationTemplate.js        //详情信息模板
+│   ├── message.jsx                   //消息通知组件
+│   ├── modal.jsx                     //公用modal
+│   ├── page.jsx                      //分页组件
+│   ├── search.jsx                    //搜索组件（？？怀疑没有使用过）
+│   └── table.jsx                     //公用table
+
+├── index.css                         //首页样式
+├── index.html                        //首页
+├── index.js                          //首页脚本
+
+├── models                            //model层
+│   ├── business.js                   //业务量
+│   ├── employee.js                   //员工
+│   ├── finance.js                    //财务
+│   ├── login.js                      //登陆注册
+│   ├── public.js                     //公用模块
+│   ├── salary.js                     //薪资
+│   ├── stores.js                     //库存
+│   ├── system.js                     //公用
+│   └── upload.js                     //文件上传
+
+├── router.js                         //路由
+
+├── routes                            //功能模块
+│   ├── router.js                     //按需加载路由配置
+│   ├── account                       //操作管理
+│   │   ├── account.less              //
+│   │   ├── index.jsx                 //
+│   │   ├── personalLeave             //个人离职
+│   │   │   └── index.js              //
+│   │   └── static                    //
+│   │       └── account.png           //
+│   ├── employee                      //员工管理
+│   │   ├── add                       //添加员工
+│   │   │   └── index.js              //
+│   │   ├── leaveApproval             //离职审批
+│   │   │   ├── index.js              //
+│   │   │   └── leaveDetail.js        //
+│   │   └── search                    //查看员工
+│   │       ├── detail.jsx            //
+│   │       ├── edit.jsx              //
+│   │       ├── index.jsx             //
+│   │       ├── knightLeaveCheck.jsx  //
+│   │       ├── search.jsx            //
+│   │       └── search.less           //
+│   ├── error                         //404错误页面
+│   │   ├── error.less                //
+│   │   ├── index.jsx                 //
+│   │   └── static                    //
+│   │       ├── errorBg.png           //
+│   │       └── errorBtn.png          //
+│   ├── finance
+│   │   ├── financeApply
+│   │   │   ├── breakDetail.jsx
+│   │   │   ├── breakModal.jsx
+│   │   │   ├── detail.jsx
+│   │   │   ├── index.jsx
+│   │   │   ├── moreInfo.jsx
+│   │   │   ├── newRentDetail.jsx
+│   │   │   ├── otherApplyDetail.jsx
+│   │   │   ├── punishmentDetail.jsx
+│   │   │   ├── purchaseDetail.jsx
+│   │   │   ├── relet.jsx
+│   │   │   ├── reletDetail.jsx
+│   │   │   ├── teamBuildDetail.jsx
+│   │   │   ├── travelDetail.jsx
+│   │   │   └── unexpectedDetail.jsx
+│   │   └── newFinanceApply
+│   │       └── index
+│   │           ├── index.jsx
+│   │           ├── otherApply
+│   │           │   └── otherApply.jsx
+│   │           ├── punishmentApply
+│   │           │   └── punishmentApply.jsx
+│   │           ├── purchaseApply
+│   │           │   └── purchaseApply.jsx
+│   │           ├── rentHouseApply
+│   │           │   ├── confirmModal.jsx
+│   │           │   ├── rentApply.jsx
+│   │           │   └── uploadPic.jsx
+│   │           ├── teamBuildApply
+│   │           │   └── teamBuild.jsx
+│   │           ├── travelApply
+│   │           │   └── traveApply.jsx
+│   │           └── unexpectedApply
+│   │               └── unexpectedApply.jsx
+│   ├── layout                        //布局文件
+│   │   ├── header.jsx                //
+│   │   ├── index.jsx                 //
+│   │   ├── layout.less               //
+│   │   ├── nav.jsx                   //
+│   │   └── static                    //
+│   │       ├── headerLogo.png        //
+│   │       ├── logo.png              //
+│   │       ├── navLogo@2x.png        //
+│   │       └── userIcon.png          //
+│   ├── login                         //登录业务组件
+│   │   ├── index.jsx                 //
+│   │   ├── static                    //
+│   │   │   ├── lgBg.jpg              //
+│   │   │   ├── loginBg.jpg           //
+│   │   │   ├── logo.png              //
+│   │   │   └── logoNew.png           //
+│   │   └── style                     //
+│   │       ├── login.less            //
+│   │       └── theme.less            //
+│   ├── materials                     //物资管理
+│   │   ├── Purchase                  // 采购
+│   │   │   ├── detail.jsx            // 采购|报废 -- 单号详情
+│   │   │   ├── errorOrder.jsx        // 采购|报废 -- 采购单报错
+│   │   │   ├── pickRecord.jsx        // 采购|报废 -- 采购 | 报废记录
+│   │   │   ├── purchase.less         // 采购|报废 - 新建采购|报废单
+│   │   │   └── purchaseOrder.jsx     //
+│   │   ├── distribute                // 分发
+│   │   │   ├── detail.jsx            // 分发|退货详情
+│   │   │   ├── distributeLog.jsx     // 分发|退货记录
+│   │   │   └── distributeOrder.jsx   // 分发|退货详情
+│   │   └── inventory                 // 库存信息
+│   │       ├── changeMessage.jsx     // 库存信息-变动明细
+│   │       ├── itemList.jsx          // 库存信息-品目明细
+│   │       ├── itemModal.jsx         // 品目明细 - 添加|编辑品目模板
+│   │       ├── knightMaterials.jsx   // 库存信息-查看骑士物资
+│   │       ├── materialsDetail.jsx   // 物资详情
+│   │       └── stores.jsx            // 库存信息-查看库存
+│   ├── operationManage               // 上传文件
+│   │   ├── checkDetail.jsx           //
+│   │   ├── index.jsx                 //
+│   │   ├── upload.jsx                //
+│   │   └── upload.less               //
+│   ├── queryManage                   // 业务查询
+│   │   ├── balance.jsx               // 收支查询
+│   │   ├── balanceDetail.jsx         // 收支查询 详情
+│   │   ├── business.jsx              // 业务查询
+│   │   ├── business.less             //
+│   │   ├── columns.js                //
+│   │   ├── detail.jsx                // 业务量查询
+│   │   ├── search.jsx                // 业务量查询 search 组件
+│   │   └── tabs.jsx                  // 业务量查询 tabs 组件
+│   ├── role                          // 权限处理中心
+│   │   ├── role.js                   // 角色
+│   │   └── super.js                  // 权限路由
+│   ├── salary                        // 薪资管理
+│   │   ├── deductions                // 骑士补款
+│   │   │   ├── create.jsx            // 新建骑士补款
+│   │   │   ├── detail.jsx            // 骑士补款详情
+│   │   │   └── index.jsx             //
+│   │   ├── fillingMoney              // 骑士扣款
+│   │   │   ├── create.jsx            // 新建骑士扣款
+│   │   │   ├── detail.jsx            // 骑士扣款详情
+│   │   │   └── index.jsx             //
+│   │   ├── search                    // 薪资查询
+│   │   │   ├── detail.jsx            //
+│   │   │   └── index.jsx             //
+│   │   └── setting                   // 薪资设置
+│   │       ├── create.jsx            // 新建薪资设置
+│   │       ├── detail.jsx            // 薪资设置详情
+│   │       └── index.jsx             //
+│   └── system                        //
+│       ├── field                     // 字段管理
+│       │   └── index.jsx             //
+│       ├── supplier                  // 供应商管理
+│       │   ├── add.jsx               // 添加供应商
+│       │   ├── edit.jsx              // 编辑供应商
+│       │   └── index.js              //
+│       ├── system.less               //
+│       ├── target                    // 指标管理
+│       │   └── index.jsx             //
+│       └── user                      // 用户管理
+│           ├── edit.jsx              //
+│           ├── index.jsx             //
+│           ├── modal.jsx             //
+│           └── search.jsx            //
+
+├── services                          // 请求接口服务
+│   ├── account.js                    // 账户
+│   ├── business.js                   // 业务量
+│   ├── employee.js                   // 员工管理
+│   ├── finance.js                    // 财务
+│   ├── login.js                      // 登陆注册
+│   ├── salary.js                     // 薪资管理
+│   ├── stores.js                     // 库存信息
+│   ├── system.js                     // 系统管理（字段管理，供应商管理，指标管理，用户管理）
+│   └── upload.js                     // 上传文件
+
+├── static                            // 静态文件
+│   ├── account.png                   //
+│   ├── bj.jpg                        //
+│   ├── errorBg.png                   //
+│   ├── errorBtn.png                  //
+│   ├── favicon.ico                   //
+│   ├── favicon@2x.ico                //
+│   ├── headerLogo.png                //
+│   ├── lgBg.jpg                      //
+│   ├── logoNew.png                   //
+│   └── userIcon.png                  //
+
+└── utils                             // 工具类目录
+    ├── createHead.js                 // 请求的加密head创建
+    ├── delay.js                      // ES6 异步机制
+    ├── permission.js                 // 权限判断
+    └── util.js                       // 工具类
+
+40 directories, 138 files
